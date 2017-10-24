@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="mixwhile">#EEEEEE</color>
+    <color name="white">#ffffff</color>
+    <color name="txttolbar">#64B5F6</color>
+    <color name="colorbg">#BDBDBD</color>
+    <color name="bg_btn">#88000000</color>
+</resources>

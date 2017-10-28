@@ -41,6 +41,7 @@
                         <ImageView
                             android:layout_width="@dimen/_80sdp"
                             android:layout_height="@dimen/_80sdp"
+                            android:id="@+id/imguser"
                             android:src="@drawable/profile_user"
                             />
                     </LinearLayout>
@@ -75,6 +76,7 @@
                                 android:id="@+id/firstname"
                                 android:textColorHint="@color/mixwhile"
                                 android:hint="@string/enter_here"
+                                android:text="hihi"
                                 android:textSize="@dimen/_14sdp"
                                 android:background="@android:color/transparent"
                                 />
@@ -105,6 +107,7 @@
                                 android:layout_weight=".3"
                                 android:textColorHint="@color/mixwhile"
                                 android:id="@+id/lastname"
+                                android:text="hehe"
                                 android:textColor="@color/white"
                                 android:hint="@string/enter_here"
                                 android:textSize="@dimen/_14sdp"
@@ -137,6 +140,7 @@
                                 android:layout_weight=".3"
                                 android:textColorHint="@color/mixwhile"
                                 android:id="@+id/emailId"
+                                android:text="ok12@gmail.com"
                                 android:textColor="@color/white"
                                 android:hint="@string/enter_here"
                                 android:textSize="@dimen/_14sdp"
@@ -169,6 +173,7 @@
                                 android:layout_weight=".3"
                                 android:textColor="@color/white"
                                 android:id="@+id/phone_number"
+                                android:text="0987878729"
                                 android:textColorHint="@color/mixwhile"
                                 android:hint="@string/enter_here"
                                 android:textSize="@dimen/_14sdp"
@@ -200,6 +205,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight=".3"
                                 android:id="@+id/birthday"
+                                android:text="2016-03-02"
                                 android:textColor="@color/white"
                                 android:textColorHint="@color/mixwhile"
                                 android:hint="@string/enter_here"
@@ -233,6 +239,7 @@
                                 android:layout_weight=".3"
                                 android:textColorHint="@color/mixwhile"
                                 android:id="@+id/ssn"
+                                android:text="0987"
                                 android:textColor="@color/white"
                                 android:hint="@string/enter_here"
                                 android:textSize="@dimen/_14sdp"
@@ -265,6 +272,7 @@
                                 android:layout_weight=".3"
                                 android:textColor="@color/white"
                                 android:id="@+id/pass"
+                                android:text="123"
                                 android:inputType="textPassword"
                                 android:textColorHint="@color/mixwhile"
                                 android:textColorHighlight="@color/mixwhile"
@@ -297,6 +305,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight=".3"
+                                android:text="123"
                                 android:id="@+id/comfirmpass"
                                 android:textColor="@color/white"
                                 android:inputType="textPassword"
@@ -337,6 +346,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:id="@+id/chk_yes"
+                                    android:checked="true"
                                     />
                                 <TextView
                                     android:layout_width="wrap_content"

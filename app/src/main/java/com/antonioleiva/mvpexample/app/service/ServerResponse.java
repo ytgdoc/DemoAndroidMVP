@@ -14,9 +14,9 @@ public class ServerResponse implements Serializable {
     private String message;
 
     @SerializedName("statusCode")
-    private boolean statusCode;
+    private int statusCode;
 
-    public ServerResponse(String message, boolean error){
+    public ServerResponse(String message, int statusCode){
         this.message = message;
         this.statusCode = statusCode;
     }
@@ -29,12 +29,11 @@ public class ServerResponse implements Serializable {
         this.message = message;
     }
 
-    public boolean isError() {
+    public int getStatusCode() {
         return statusCode;
     }
 
-    public void setError(boolean statusCode) {
+    public void setStatusCode(int statusCode) {
         this.statusCode = statusCode;
     }
-
 }

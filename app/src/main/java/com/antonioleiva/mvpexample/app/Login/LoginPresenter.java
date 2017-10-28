@@ -18,11 +18,14 @@
 
 package com.antonioleiva.mvpexample.app.Login;
 
+import okhttp3.MultipartBody;
+import okhttp3.RequestBody;
+
 public interface LoginPresenter {
-    void validateCredentials( String firstName,  String lastName,
-                              String emailId ,  String ssn,  String password ,
-                              String phoneNumber ,  String backgroundCheck,
-                              String dateOfBirth ,  String deviceType ,  String deviceToken);
+    void validateCredentials( MultipartBody.Part photo, String firstName, String lastName,
+                             String emailId , String ssn, String password ,
+                             String phoneNumber , String backgroundCheck,
+                             String dateOfBirth , String deviceType , String deviceToken);
 
     void onDestroy();
 }

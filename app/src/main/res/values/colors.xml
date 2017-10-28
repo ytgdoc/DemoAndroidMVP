@@ -8,4 +8,5 @@
     <color name="txttolbar">#64B5F6</color>
     <color name="colorbg">#BDBDBD</color>
     <color name="bg_btn">#88000000</color>
+    <color name="line_dialog">#286734</color>
 </resources>

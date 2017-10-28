@@ -11,6 +11,6 @@ public class MainInfo implements Serializable {
      * Mỗi chế độ sẽ có những chức năng, cách chạy khác nhau...
      */
     public static final String MethodDemo = "v1/serviceProvider/register";
-    public static String url_server = "http://52.89.66.217:8181/api/";
+    public static String url_server = "aHR0cDovLzUyLjg5LjY2LjIxNzo4MTgxL2FwaS8=";
 
 }

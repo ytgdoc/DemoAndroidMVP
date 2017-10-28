@@ -20,6 +20,9 @@ package com.antonioleiva.mvpexample.app.Login;
 
 import android.app.Activity;
 
+import okhttp3.MultipartBody;
+import okhttp3.RequestBody;
+
 public class LoginPresenterImpl implements LoginPresenter, LoginInteractor.OnLoginFinishedListener {
     private Activity activity;
     private LoginView loginView;
@@ -31,15 +34,15 @@ public class LoginPresenterImpl implements LoginPresenter, LoginInteractor.OnLog
         this.loginInteractor = new LoginInteractorImpl();
     }
 
-    @Override public void validateCredentials( String firstName,  String lastName,
-                                               String emailId ,  String ssn,  String password ,
-                                               String phoneNumber ,  String backgroundCheck,
-                                               String dateOfBirth ,  String deviceType ,  String deviceToken) {
+    @Override public void validateCredentials( MultipartBody.Part photo, String firstName, String lastName,
+                                              String emailId , String ssn, String password ,
+                                              String phoneNumber , String backgroundCheck,
+                                              String dateOfBirth , String deviceType , String deviceToken) {
         if (loginView != null) {
             loginView.showProgress();
         }
 
-        loginInteractor.login(activity,firstName, lastName,emailId,
+        loginInteractor.login(activity,photo,firstName, lastName,emailId,
                 ssn,password,phoneNumber,backgroundCheck,dateOfBirth,deviceType,deviceToken, this);
     }
 

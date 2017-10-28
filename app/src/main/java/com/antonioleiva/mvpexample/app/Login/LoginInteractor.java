@@ -20,6 +20,9 @@ package com.antonioleiva.mvpexample.app.Login;
 
 import android.app.Activity;
 
+import okhttp3.MultipartBody;
+import okhttp3.RequestBody;
+
 public interface LoginInteractor {
 
     interface OnLoginFinishedListener {
@@ -30,9 +33,9 @@ public interface LoginInteractor {
         void onSuccess();
     }
 
-    void login(Activity activity, String firstName,  String lastName,
-                String emailId ,  String ssn,  String password ,
-                String phoneNumber ,  String backgroundCheck,
-                String dateOfBirth ,  String deviceType ,  String deviceToken,  OnLoginFinishedListener listener);
+    void login(Activity activity, MultipartBody.Part photo, String firstName, String lastName,
+               String emailId , String ssn, String password ,
+               String phoneNumber , String backgroundCheck,
+               String dateOfBirth , String deviceType , String deviceToken, OnLoginFinishedListener listener);
 
 }

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="200dp"
+    android:layout_gravity="center"
+    android:padding="20dp"
+    android:gravity="center"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_15sdp"
+        android:text="Đang xử lí... "
+        android:layout_margin="@dimen/_12sdp"
+        android:layout_marginTop="8dp"
+        android:textStyle="normal|bold" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/line_dialog"></View>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:layout_gravity="center"
+    android:orientation="horizontal"
+    >
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/_12sdp"
+        android:text="Kết nối đến server, vui lòng đợi..." />
+</LinearLayout>
+</LinearLayout>
